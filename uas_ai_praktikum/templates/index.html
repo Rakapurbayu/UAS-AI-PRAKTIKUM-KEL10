@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GayaBelajar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon"
+        href="https://cdn-icons-png.freepik.com/512/9193/9193824.png"
+        type="image/x-icon">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+       .container {
+            max-width: 600px;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+       .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+       .checkbox-group {
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ced4da;
+            padding: 10px;
+            border-radius: 5px;
+        }
+       .checkbox-group label {
+            display: block;
+            margin-bottom: 10px;
+        }
+       .checkbox-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="mb-4">Form Kepribadian dan Golongan Darah</h2>
+        <form id="kepribadianForm" onsubmit="event.preventDefault(); submitForm();">
+            <fieldset class="mb-3">
+                <legend class="form-label">Pilih kepribadian Anda (maksimal 5):</legend>
+                <div class="checkbox-group">
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="terorganisir" class="kepribadian-checkbox"> Terorganisir</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="kritis" class="kepribadian-checkbox"> Kritis</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="bertanggung jawab" class="kepribadian-checkbox"> Bertanggung jawab</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="konsisten" class="kepribadian-checkbox"> Konsisten</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="tenang" class="kepribadian-checkbox"> Tenang</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="adil" class="kepribadian-checkbox"> Adil</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="keras kepala" class="kepribadian-checkbox"> Keras kepala</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="perfeksionis" class="kepribadian-checkbox"> Perfeksionis</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="semangat yang tinggi" class="kepribadian-checkbox"> Semangat yang tinggi</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="aktif" class="kepribadian-checkbox"> Aktif</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="kreatif" class="kepribadian-checkbox"> Kreatif</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="selalu ingin tahu" class="kepribadian-checkbox"> Selalu ingin tahu</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="kurang kooperatif" class="kepribadian-checkbox"> Kurang kooperatif</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="individualis" class="kepribadian-checkbox"> Individualis</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="lebih mementingkan logika daripada perasaan" class="kepribadian-checkbox"> Lebih mementingkan logika daripada perasaan</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="misterius" class="kepribadian-checkbox"> Misterius</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="memiliki banyak teman" class="kepribadian-checkbox"> Memiliki banyak teman</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="rasional" class="kepribadian-checkbox"> Rasional</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="suka menolong" class="kepribadian-checkbox"> Suka menolong</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="mudah beradaptasi" class="kepribadian-checkbox"> Mudah beradaptasi</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="tidak tegas" class="kepribadian-checkbox"> Tidak tegas</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="mudah lupa" class="kepribadian-checkbox"> Mudah lupa</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="sensitif" class="kepribadian-checkbox"> Sensitif</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="empati" class="kepribadian-checkbox"> Empati</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="baik hati" class="kepribadian-checkbox"> Baik hati</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="pemurah" class="kepribadian-checkbox"> Pemurah</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="enerjik" class="kepribadian-checkbox"> Enerjik</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="terbuka" class="kepribadian-checkbox"> Terbuka</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="menghargai pendapat orang lain" class="kepribadian-checkbox"> Menghargai pendapat orang lain</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="mudah terpengaruh oleh orang lain" class="kepribadian-checkbox"> Mudah terpengaruh oleh orang lain</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="kurang fokus" class="kepribadian-checkbox"> Kurang fokus</label>
+                    </div>
+                    <div class="form-check">
+                        <label><input type="checkbox" name="kepribadian" value="lebih suka menjadi pengikut dibanding pemimpin" class="kepribadian-checkbox"> Lebih suka menjadi pengikut dibanding pemimpin</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="mb-3">
+                <label for="golongan_darah" class="form-label">Pilih golongan darah Anda:</label>
+                <select id="golongan_darah" class="form-select">
+                    <option value="" disabled selected>Pilih golongan darah</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="AB">AB</option>
+                    <option value="O">O</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+        <div id="result" class="result mt-3"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkboxes = document.querySelectorAll('.kepribadian-checkbox');
+            const maxChecked = 5;
+
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    const checkedCount = document.querySelectorAll('.kepribadian-checkbox:checked').length;
+                    if (checkedCount > maxChecked) {
+                        alert('Anda hanya dapat memilih maksimal 5 kepribadian.');
+                        this.checked = false;
+                    }
+                });
+            });
+        });
+
+        async function submitForm() {
+            const checkboxes = document.querySelectorAll('input[name="kepribadian"]:checked');
+            const kepribadian = Array.from(checkboxes).map(cb => cb.value);
+            const golongan_darah = document.getElementById('golongan_darah').value;
+
+            // Validasi minimal satu kepribadian terpilih
+            if (kepribadian.length === 0) {
+                alert('Pilih minimal satu kepribadian.');
+                return;
+            }
+
+            // Persiapkan data untuk dikirimkan
+            const data = {
+                'Kepribadian': kepribadian,
+                'Golongan Darah': golongan_darah
+            };
+
+            // Kirim permintaan POST
+            const response = await fetch('/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+            // Ambil respons JSON dari server
+            const result = await response.json();
+
+            // Tampilkan hasil prediksi
+            document.getElementById('result').innerText = `Prediksi: ${result.prediction}`;
+        }
+    </script>
+</body>
+</html>
